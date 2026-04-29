@@ -92,7 +92,9 @@ MODEL_MAP = {
     "o3-mini":           "qwen3.5-flash",
     # Anthropic
     "claude-opus-4-6":   "qwen3.6-plus",
+    "claude-sonnet-4-6": "qwen3.6-plus",
     "claude-sonnet-4-5": "qwen3.6-plus",
+    "claude-haiku-4-5":  "qwen3.5-flash",
     "claude-3-opus":     "qwen3.6-plus",
     "claude-3.5-sonnet": "qwen3.6-plus",
     "claude-3-sonnet":   "qwen3.6-plus",

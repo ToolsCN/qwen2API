@@ -17,10 +17,11 @@ services:
       PORT: "7860"
       WORKERS: "1"
       LOG_LEVEL: "INFO"
+      ENGINE_MODE: "hybrid"
       MAX_INFLIGHT: "2"
-      ACCOUNT_MIN_INTERVAL_MS: "0"
-      REQUEST_JITTER_MIN_MS: "0"
-      REQUEST_JITTER_MAX_MS: "0"
+      ACCOUNT_MIN_INTERVAL_MS: "1200"
+      REQUEST_JITTER_MIN_MS: "120"
+      REQUEST_JITTER_MAX_MS: "360"
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS http://localhost:7860/healthz || exit 1"]
       interval: 30s
